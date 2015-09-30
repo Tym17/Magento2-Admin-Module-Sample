@@ -1,5 +1,5 @@
 <?php
-namespace Tym17\SampleAdmin\Adminhtml\SampleTwo;
+namespace Tym17\AdminSample\Adminhtml\SampleTwo;
 
 class Index extends \MAgento\Backend\App\Action
 {
