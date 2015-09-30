@@ -1,0 +1,1 @@
+# AdminSample module

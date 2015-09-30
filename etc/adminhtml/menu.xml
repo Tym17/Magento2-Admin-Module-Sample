@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Tym17_SampleAdmin::customMenu" title="Custom Menu" module="Tym17_SampleAdmin" sortOrder="500" parent="Magento_Backend::system" resource="Tym17_SampleAdmin::customMenu"/>
+        <add id="Tym17_SampleAdmin::sampleOne" title="Sample One" module="Tym17_SampleAdmin" sortOrder="100" parent="Tym17_SampleAdmin::customMenu" action="SampleAdmin/sampleOne" resource="Tym17_SampleAdmin::sampleOne"/>
+        <add id="Tym17_SampleAdmin::sampleTwo" title="Sample Two" module="Tym17_SampleAdmin" sortOrder="200" parent="Tym17_SampleAdmin::customMenu" action="SampleAdmin/sampleTwo" resource="Tym17_SampleAdmin::sampleTwo"/>
+    </menu>
+</config>
