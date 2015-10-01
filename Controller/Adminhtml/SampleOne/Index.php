@@ -1,7 +1,7 @@
 <?php
-namespace Tym17\AdminSample\Adminhtml\SampleOne;
+namespace Tym17\AdminSample\Controller\Adminhtml\SampleOne;
 
-class Index extends \MAgento\Backend\App\Action
+class Index extends \Magento\Backend\App\Action
 {
   /**
   * Index Action*
@@ -9,6 +9,7 @@ class Index extends \MAgento\Backend\App\Action
   */
   public function execute()
   {
-    die('hello world!')
+      $this->_view->loadLayout();
+      $this->_view->renderLayout();
   }
 }
