@@ -22,7 +22,7 @@ class Index extends \Magento\Backend\App\Action
         parent::__construct($context);
         $this->resultPageFactory = $resultPageFactory;
     }
-    
+
     /**
     * Index Action*
     * @return void
@@ -34,7 +34,8 @@ class Index extends \Magento\Backend\App\Action
         $resultPage->setActiveMenu('Tym17_AdminSample::sampleTwo');
         $resultPage->addBreadcrumb(__('System'), __('System'));
         $resultPage->addBreadcrumb(__('SampleTwo'), __('SampleTwo'));
-        $resultPage->getConfig()->getTitle()->prepend(__('SampleTwo'));
+        $resultPage->getConfig()->getTitle()->prepend(__('SampleTwo Title'));
+        $resultPage->getLayout()->getBlock('Two')->setSampleText('This text is passed');
         return $resultPage;
     }
 }
