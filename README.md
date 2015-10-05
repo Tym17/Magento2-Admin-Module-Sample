@@ -8,6 +8,14 @@
   * `Controller/Adminhtml/SampleOne/Index.php`
   * `Controller/Adminhtml/SampleTwo/Index.php`
 * To add content to your freshly created pages, check out the following files:
-  * `view/adminhtml/layout/adminsample_sample*_index.xml`
-  * `view/adminhtml/templates/sample/*.phtml`
-  * You can also check `Controller/Adminhtml/SampleTwo/Index.php` with `view/adminhtml/templates/sample/two.phtml` to see how to pass something to the template.
+  * `view/adminhtml/layout/adminsample_sampleone_index.xml`
+  * `view/adminhtml/templates/sample/one.phtml`
+* To add content to your freshly created pages and pass something to it, You can also check:
+  * `view/adminhtml/layout/adminsample_sampletwo_index.xml`
+  * `Controller/Adminhtml/SampleTwo/Index.php`
+  * `view/adminhtml/templates/sample/two.phtml`
+
+# To do
+
+- Add config menu
+- Show config access from php

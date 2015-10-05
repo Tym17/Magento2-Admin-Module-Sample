@@ -34,8 +34,9 @@ class Index extends \Magento\Backend\App\Action
         $resultPage->setActiveMenu('Tym17_AdminSample::sampleTwo');
         $resultPage->addBreadcrumb(__('System'), __('System'));
         $resultPage->addBreadcrumb(__('SampleTwo'), __('SampleTwo'));
-        $resultPage->getConfig()->getTitle()->prepend(__('SampleTwo Title'));
-        $resultPage->getLayout()->getBlock('Two')->setSampleText('This text is passed');
+        $resultPage->getConfig()->getTitle()->prepend(__('SampleTwo Title')); // Changing the page title
+        // You will notice that this block 'Two' is defined in the template file
+        $resultPage->getLayout()->getBlock('Two')->setSampleText('This text is passed'); // Here we use Magento2's Magic getsetters
         return $resultPage;
     }
 }
