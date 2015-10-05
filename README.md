@@ -14,6 +14,11 @@
   * `view/adminhtml/layout/adminsample_sampletwo_index.xml`
   * `Controller/Adminhtml/SampleTwo/Index.php`
   * `view/adminhtml/templates/sample/two.phtml`
+* To set and retrieve values from Magento2's configuration you can check these files:
+  * `Controller/Adminhtml/SampleTwo/Index.php`
+  * `etc/adminhtml/system.xml` Configuration menu in *Stores/Settings/Configuration* is set here
+  * `etc/config.xml` Default configuration
+  * `view/adminhtml/templates/sample/two.phtml`
 
 # To do
 

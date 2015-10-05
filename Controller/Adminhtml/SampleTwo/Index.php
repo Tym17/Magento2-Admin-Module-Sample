@@ -3,6 +3,7 @@ namespace Tym17\AdminSample\Controller\Adminhtml\SampleTwo;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
+use Magento\Framework\App\Config\ScopeConfigInterface; // Needed to retrieve config values
 
 class Index extends \Magento\Backend\App\Action
 {
@@ -12,15 +13,23 @@ class Index extends \Magento\Backend\App\Action
      protected $resultPageFactory;
 
     /**
+     * @var scopeConfig
+     * Needed to retrieve config values
+     */
+    protected $scopeConfig;
+
+    /**
      * @param Context $context
      * @param PageFactory $resultPageFactory
      */
     public function __construct(
         Context $context,
-        PageFactory $resultPageFactory
+        PageFactory $resultPageFactory,
+        ScopeConfigInterface $scopeConfig // Needed to retrieve config values
     ) {
         parent::__construct($context);
         $this->resultPageFactory = $resultPageFactory;
+        $this->scopeConfig = $scopeConfig; // Needed to retrieve config values
     }
 
     /**
@@ -37,6 +46,9 @@ class Index extends \Magento\Backend\App\Action
         $resultPage->getConfig()->getTitle()->prepend(__('SampleTwo Title')); // Changing the page title
         // You will notice that this block 'Two' is defined in the template file
         $resultPage->getLayout()->getBlock('Two')->setSampleText('This text is passed'); // Here we use Magento2's Magic getsetters
+        // Retrieving config value and passing it to template
+        $cfg_text = $this->scopeConfig->getValue('adminsample/txt/textsample');
+        $resultPage->getLayout()->getBlock('Two')->setCfgSample($cfg_text);
         return $resultPage;
     }
 }

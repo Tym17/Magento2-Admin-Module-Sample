@@ -1,5 +1,17 @@
-<h1> Sample Two </h1>
-<p> <?php
-    /* Using magic getsetters */
-    echo $this->getSampleText();
-?> </p>
+<div>
+    <h1> Sample Two </h1>
+    <p>
+        <?php
+        /* Using magic getsetters */
+        echo $this->getSampleText();
+        ?>
+    </p>
+    <p>
+        <strong>
+            <?php
+            /* retrieving sample cfg value */
+            echo $this->getCfgSample();
+            ?>
+        </strong>
+    </p>
+</div>
