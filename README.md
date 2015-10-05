@@ -22,5 +22,4 @@
 
 # To do
 
-- Add config menu
-- Show config access from php
+- ACL
