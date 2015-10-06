@@ -14,6 +14,13 @@
                     <resource id="Tym17_AdminSample::things" title="Things" sortOrder="70"/>
                 </resource>
                 -->
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Tym17_AdminSample::config" title="AdminSampleConfig" />
+                        </resource>
+                    </resource>
+                </resource>
             </resource>
         </resources>
     </acl>
