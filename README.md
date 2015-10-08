@@ -23,7 +23,7 @@
   * `etc/acl.xml`
   * You'll notice that most resource elements are from `etc/adminhtml/menu.xml`
 * To see how to have different layouts, check this file:
-* `view/adminhtml/layout/adminsample_sampletwo_index.xml`
+  * `view/adminhtml/layout/adminsample_sampletwo_index.xml`
 * To see how we create a custom block and use it, check those files:
   * `Block/Adminhtml/CustomBlock.php`
   * `view/adminhtml/layout/adminsample_sampletwo_index.xml`
