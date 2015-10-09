@@ -28,7 +28,11 @@
   * `Block/Adminhtml/CustomBlock.php`
   * `view/adminhtml/layout/adminsample_sampletwo_index.xml`
 * To see how you use block functions, have a look at:
+* `Block/Adminhtml/CustomBlock.php`
+  * `view/adminhtml/templates/custom/one.phtml`
+* To call a helper from a block you can check:
   * `Block/Adminhtml/CustomBlock.php`
+  * `Helper/ConfigHelper.php`
   * `view/adminhtml/templates/custom/one.phtml`
 
 # To do
