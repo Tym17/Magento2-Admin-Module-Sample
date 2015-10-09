@@ -41,8 +41,8 @@ class Index extends \Magento\Backend\App\Action
         /** @var \MAgento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu('Tym17_AdminSample::sampleTwo');
-        $resultPage->addBreadcrumb(__('System'), __('System'));
-        $resultPage->addBreadcrumb(__('SampleTwo'), __('SampleTwo'));
+        /*$resultPage->addBreadcrumb(__('System'), __('System'));  This also changes page title in tab name
+        $resultPage->addBreadcrumb(__('SampleTwo'), __('SampleTwo'));*/
         $resultPage->getConfig()->getTitle()->prepend(__('SampleTwo Title')); // Changing the page title
         // You will notice that this block 'Two' is defined in the template file
         $resultPage->getLayout()->getBlock('Two')->setSampleText('This text is passed'); // Here we use Magento2's Magic getsetters

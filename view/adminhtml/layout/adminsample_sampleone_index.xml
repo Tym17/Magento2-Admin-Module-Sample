@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>SampleOne Title</title>
+    </head>
     <body>
         <referenceContainer name="content">
             <block class="Tym17\AdminSample\Block\Adminhtml\CustomBlock" name="Overview" template="Tym17_AdminSample::custom/one.phtml" />
