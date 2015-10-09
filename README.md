@@ -27,7 +27,10 @@
 * To see how we create a custom block and use it, check those files:
   * `Block/Adminhtml/CustomBlock.php`
   * `view/adminhtml/layout/adminsample_sampletwo_index.xml`
+* To see how you use block functions, have a look at:
+  * `Block/Adminhtml/CustomBlock.php`
+  * `view/adminhtml/templates/custom/one.phtml`
 
 # To do
 
-- CustomBlock functions
+- Use model inside CustomBlock

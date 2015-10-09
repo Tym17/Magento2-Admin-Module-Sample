@@ -16,4 +16,12 @@ class CustomBlock extends Template
         parent::__construct($context, $data);
     }
 
+    /**
+     * @return string
+     */
+    public function greet()
+    {
+        return 'Greetings !';
+    }
+
 }
