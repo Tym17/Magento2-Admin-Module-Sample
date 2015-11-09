@@ -4,7 +4,6 @@
   "description": "Admin module sample for Magento 2",
   "keywords": ["Magento2", "Admin", "Sample"],
   "homepage": "https://github.com/Tym17/",
-  "version": "0.1.0",
   "aaaminimum-stability": "dev",
   "license": "AFL - Academic Free License (AFL 3.0)",
   "authors": [
